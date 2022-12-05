@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color :#FFFFFF;
+    
+}
+
+html{
+    height: 100vh;
+    font-size: 14px;
+    font-family: cursive;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--secondary-color);
+    background-image: url(../resource/img/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    align-items: flex-end;
+    color: var(--secondary-color);
+    display: flex;
+    font-size: 4rem;
+    font-weight: 500;
+    height: 20vh;
+    justify-content: center;
+    letter-spacing: 0.2rem;
+    padding: 30px 48px;
+    text-align: center;
+}
+
+.footer {
+    color: var(--secondary-color);
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    padding: 30px 48px;
+    align-items: end;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.play-btn {
+     align-items: center;
+     background-color: #5e0d0c;
+     border-radius: 15px;
+     border: 1px solid #4c0300;
+     box-shadow: inset 1px 1px 0px rgb(255 255 255 / 25%), inset 0 0 6px #a23227, inset 0 80px 80px -40px #ac3223, 1px 1px 3px rgb(0 0 0 / 75%);
+     color: #FFFFFF;
+     cursor: pointer;
+     display: flex;
+     font-size: 2rem;
+     font-weight: 700;
+     height: 100px;
+     justify-content: center;
+     letter-spacing: 0.1rem;
+     line-height: 26px;
+     width: 200px;
+}
+
+.play-btn:hover {
+    background: #a61715;
+	box-shadow:
+		inset 1px 1px 0px rgba(255,255,255,0.25),
+		inset 0 0 6px #da3b2c,
+		inset 0 80px 80px -40px #dd4330, 
+		1px 1px 3px rgba(0,0,0,0.75); 
+}
+
+.play-again {
+    margin: 20px;
+    font-size: 1.5rem;
+    color: #5e0d0c;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (max-width: 551px) {
+    .header {
+        align-items: flex-start;
+        font-size: 3rem;
+    }
+
+}
