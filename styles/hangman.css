@@ -40,38 +40,38 @@ body{
 }
 
 .footer {
+    align-items: end;
     color: var(--secondary-color);
     display: flex;
     height: 20vh;
     justify-content: center;
     padding: 30px 48px;
-    align-items: end;
 }
 
 .main {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
-    align-items: center;
+    justify-content: center;
 }
 
 .play-btn {
-     align-items: center;
-     background-color: #5e0d0c;
-     border-radius: 15px;
-     border: 1px solid #4c0300;
-     box-shadow: inset 1px 1px 0px rgb(255 255 255 / 25%), inset 0 0 6px #a23227, inset 0 80px 80px -40px #ac3223, 1px 1px 3px rgb(0 0 0 / 75%);
-     color: #FFFFFF;
-     cursor: pointer;
-     display: flex;
-     font-size: 2rem;
-     font-weight: 700;
-     height: 100px;
-     justify-content: center;
-     letter-spacing: 0.1rem;
-     line-height: 26px;
-     width: 200px;
+    align-items: center;
+    background-color: #5e0d0c;
+    border-radius: 15px;
+    border: 1px solid #4c0300;
+    box-shadow: inset 1px 1px 0px rgb(255 255 255 / 25%), inset 0 0 6px #a23227, inset 0 80px 80px -40px #ac3223, 1px 1px 3px rgb(0 0 0 / 75%);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    height: 100px;
+    justify-content: center;
+    letter-spacing: 0.1rem;
+    line-height: 26px;
+    width: 200px;
 }
 
 .play-btn:hover {
@@ -84,10 +84,10 @@ body{
 }
 
 .play-again {
-    margin: 20px;
-    font-size: 1.5rem;
     color: #5e0d0c;
     display: none;
+    font-size: 1.5rem;
+    margin: 20px;
 }
 
 .active {

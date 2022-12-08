@@ -43,13 +43,13 @@ function play() {
 
         if (guess !== null) {
             guess = guess.toLowerCase();
+        } else {
+            showPlayAgain();
+            return;
         }
 
         if (correctLetters.includes(guess) || inCorrectLetters.includes(guess)) {
             feedback = "You have already tried that letter";
-        } else if (guess === null) {
-                showPlayAgain();
-                return;
         } else if (guess.length != 1 || numberPattern.test(guess)) { 
             feedback = "Write only ONE letter NOT two and NOT a number";
         } else {
@@ -71,7 +71,7 @@ function play() {
         }
     
     function hasWon() {
-        return !displayWord().includes("_")   
+        return !displayWord().includes("_"); 
     }
 
     function isCorrectLetter(singleLetter) {
@@ -86,9 +86,9 @@ function play() {
             if (correctLetters.includes(LetterToCheck)) {
                 wordToDisplay += LetterToCheck;
             } else {
-                wordToDisplay += "_"
+                wordToDisplay += "_";
             }
-            wordToDisplay += " "
+            wordToDisplay += " ";
         }
         return wordToDisplay.toUpperCase();
     }
@@ -106,5 +106,3 @@ function showPlayAgain() {
     let playAgain = document.getElementById("play-again");
     playAgain.classList.add("active");
 }
-
-
